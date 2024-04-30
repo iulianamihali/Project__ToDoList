@@ -1,0 +1,239 @@
+body
+{
+    width: 100%;
+    background: linear-gradient(to top, #d2a99b, #FF9494FF);
+    font-size: 18px;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#navigBar
+{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    height: 98px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+
+.org
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.words
+{
+    position: relative;
+    perspective: 20000px;
+    transform-style: preserve-3d;
+    animation: rotate 4s ease-in infinite;
+
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateX(0deg);
+    }
+
+    25%{
+        transform: rotateX(90deg);
+    }
+
+    50%{
+        transform: rotateX(180deg);
+    }
+    75%{
+        transform: rotateX(270deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+
+
+
+.prop {
+    font-size: 56px;
+    line-height: 1em;
+    font-family: ".SFNSText-Light", "SFProText-Light", "SFUIText-Light", ".SFUIText-Light", "SF Pro Text", "-apple-system", "BlinkMacSystemFont", sans-serif;
+    padding-right: 5px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.words div
+{
+    position: absolute;
+    color: #8375e5;
+    height: 40px;
+    width: 200px;
+    padding:10px 30px;
+    margin: -30px 0;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+
+.words div:nth-child(1)
+{
+    transform: rotateX(360deg) translateZ(30px);
+    background-color: rgb(97, 133, 168);
+    color: white;
+    font-family: ".SFNSText-Light", "SFProText-Light", "SFUIText-Light", ".SFUIText-Light", "SF Pro Text", "-apple-system", "BlinkMacSystemFont", sans-serif;
+
+}
+
+.words div:nth-child(2)
+{
+    transform: rotateX(270deg) translateZ(30px);
+    background-color: rgb(97, 133, 168);
+    color:white;
+    font-family: ".SFNSText-Light", "SFProText-Light", "SFUIText-Light", ".SFUIText-Light", "SF Pro Text", "-apple-system", "BlinkMacSystemFont", sans-serif;
+
+}
+.words div:nth-child(3)
+{
+    transform: rotateX(180deg) translateZ(30px);
+    background-color: rgb(97, 133, 168);
+    color:white;
+
+}
+
+.words div:nth-child(4)
+{
+    transform: rotateX(90deg) translateZ(30px);
+    background-color: rgb(97, 133, 168);
+    color: white;
+    font-family: ".SFNSText-Light", "SFProText-Light", "SFUIText-Light", ".SFUIText-Light", "SF Pro Text", "-apple-system", "BlinkMacSystemFont", sans-serif;
+
+}
+
+#signup, #signin
+{
+    background-color: rgb(92, 133, 168);
+    border-radius: 40px;
+    border: rgb(92, 133, 168);
+    box-shadow: rgba(118, 74, 74, 0.25) 0px 4px 8px 0px;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    padding: 10px 32px;
+}
+
+
+#signin
+{
+    margin-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 70px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.grid-item {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+   /* border: 1px solid #ccc; /* border for visual separation */
+   padding: 5px;
+}
+.button-grid{
+    justify-content: space-around;
+}
+
+.button2{
+    justify-content: flex-start;
+}
+
+.button1{
+    justify-content: flex-end;
+
+}
+#signup:hover{
+    transform: scale(1.05);
+    background-color: #24587a;
+}
+
+#signin:hover{
+    transform: scale(1.05);
+    background-color: #24587a;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.index-ilustrator
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        margin-top: 0;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .button-grid {
+        justify-content: center;
+    }
+
+    #signup, #signin {
+        font-size: 26px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .cub-words {
+        height: 80px;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+
+}
