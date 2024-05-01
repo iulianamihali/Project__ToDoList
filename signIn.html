@@ -14,15 +14,17 @@
     <div class="box">
         <form>
             <h2>Sign In</h2>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span>Username</span>
+            <div class="inputBox" id="login_validation">
+                <input id="loginInput" type="text" required="required" onchange="onchangeLoginInput()">
+                <span>Email / Username</span>
+<!--                <span id="eroare"></span>-->
                 <i></i>
             </div>
 
-            <div class="inputBox">
-                <input type="password" required="required">
+            <div class="inputBox" id="password_validation">
+                <input id="valuePassword" type="password" required="required" onchange="onchangePassword()">
                 <span>Password</span>
+<!--                <span id="eroareP"></span>-->
                 <i></i>
             </div>
             <div class="links">
@@ -30,8 +32,14 @@
                 <a  href="signUp.html">Sign Up</a>
             </div>
             <input type="submit" value="Sign In">
+            <span id="eroare"></span>
+            <span id="eroareP"></span>
         </form>
+
+
     </div>
 </div>
+<script src="js/validations.js">
+</script>
 </body>
 </html>

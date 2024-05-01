@@ -23,7 +23,7 @@ body
 
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 460px;
     background: linear-gradient(to top, rgba(210, 169, 155, 0.5) 0%, #d2a99b 30%, #FF9494FF 70%, rgba(255, 148, 148, 0.5) 100%);
     border-radius: 8px;
     max-width: 380px;
@@ -178,6 +178,38 @@ body
 {
     padding: 20px;
     text-align: center;
+}
+#eroare
+{
+    margin-top: 4px;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: italic, sans-serif;
+    width: 100%;
+    top: 27px;
+}
+
+#eroareP
+{
+    margin-top: 6px;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: italic, sans-serif;
+    width: 100%;
+    top: 27px;
+}
+
+#eroareU
+{
+    padding-top: 6px;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: italic, sans-serif;
+    width: 100%;
+    top: 27px;
 }
 
 @media (max-width: 768px) {

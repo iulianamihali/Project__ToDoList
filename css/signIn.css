@@ -58,7 +58,6 @@ body
     width: 300px;
     margin-top: 35px;
 
-
 }
 
 .box form .inputBox input
@@ -109,6 +108,10 @@ body
     transition: 0.5s;
 
 }
+    /*#email_validation.inputBox i*/
+/*{*/
+/*    background: red;*/
+/*}*/
 
 /*.box form .inputBox input:valid ~ i,*/
 /*.box form .inputBox input:focus ~ i*/
@@ -136,6 +139,10 @@ body
     font-size: 20px;
     color: white;
 }
+.box form .links a:nth-child(2):hover {
+    color: rgb(97, 133, 168); /* This will change the hover color to red */
+}
+
 
 .box form  input[type="submit"]
 {
@@ -171,8 +178,27 @@ body
     height: auto;
 }
 
-.box form .links a:nth-child(2):hover {
-    color: rgb(97, 133, 168); /* This will change the hover color to red */
+
+#eroare
+{
+    padding-top: 59px;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: italic, sans-serif;
+    width: 100%;
+    top: 27px;
+}
+
+#eroareP
+{
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: italic, sans-serif;
+    width: 100%;
+    top: 27px;
 }
 
 @media (max-width: 768px) {
