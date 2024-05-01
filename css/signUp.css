@@ -41,6 +41,7 @@ body
     display: flex;
     flex-direction: column;
 
+
 }
 
 
@@ -148,11 +149,13 @@ body
     font-weight: 600;
     width: 100px;
     margin-top: 10px;
+
 }
 
 .box form input[type="submit"]:active
 {
     opacity: 0.8;
+
 }
 
 
@@ -171,8 +174,10 @@ body
     height: auto;
 }
 
-.box form .links a:nth-child(2):hover {
-    color: rgb(97, 133, 168); /* This will change the hover color to red */
+.center-button
+{
+    padding: 20px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -186,13 +191,13 @@ body
     .box {
         max-width: 100%;
     }
-        padding: 10px; /* Adjust padding if needed for better layout on mobile */
-    }
-    .box form {
-        padding: 15px; /* Ensure enough padding so form fields are easily tappable */
-    }
-    .box form .inputBox input, .box form .inputBox span {
-        font-size: 16px; /* Maintain at least 16px to prevent zooming */
+    padding: 10px; /* Adjust padding if needed for better layout on mobile */
+}
+.box form {
+    padding: 15px; /* Ensure enough padding so form fields are easily tappable */
+}
+.box form .inputBox input, .box form .inputBox span {
+    font-size: 16px; /* Maintain at least 16px to prevent zooming */
 
 
 }
