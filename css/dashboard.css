@@ -1,0 +1,143 @@
+*
+{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100%;
+    background: #f3f4f4;
+    height: 100vh;
+
+}
+nav
+{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+nav.logo
+{
+    display: flex;
+    align-items: center;
+}
+.logo .menu-btn
+{
+    font-size: 28px;
+    color: #c1ccc1;
+    cursor: pointer;
+    margin-right: 14px;
+}
+.logo .logo-name
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #c1ccc1;
+}
+
+nav .sidebar
+{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    background: linear-gradient(to top, rgb(97, 133, 168) 0%, rgb(97, 133, 168) 20%, rgb(255, 192, 203) 50%, rgb(97, 133, 168) 80%, rgb(97, 133, 168) 100%);
+    box-shadow: 0 15px 11px black;
+    transition: all 0.4s ease;
+    left: -100%;
+}
+
+nav.display .sidebar
+{
+    left: 0;
+}
+
+.sidebar-content
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+
+.sidebar-content  li
+{
+    list-style-type: none;
+}
+.sidebar-content a
+{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.sidebar-content a:hover
+{
+    background-color: #fff;
+
+}
+
+.sidebar-content i
+{
+    font-size: 20px;
+    color: #c1ccc1;
+    margin-right: 14px;
+}
+
+.sidebar-content .link
+{
+    font-size: 16px;
+    color: #c1ccc1;
+    font-weight: 400;
+}
+
+.sidebar-content a:hover i, .sidebar-content a:hover .link
+{
+    color: #171721;
+    font-weight: bold;
+}
+
+.active
+{
+    background-color: #1d1b31;
+}
+
+.header-logo .menu-btn, .header-logo .logo-name
+{
+    color: #2b6c96;
+}
+
+.overlay
+{
+    height: 1000vh;
+    width: 200%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+nav.display ~.overlay
+{
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+}

@@ -5,11 +5,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
 body
 {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +15,28 @@ body
     font-family: ".SFNSText-Light", "SFProText-Light", "SFUIText-Light", ".SFUIText-Light", "SF Pro Text", "-apple-system", "BlinkMacSystemFont", sans-serif;
 
 }
+/*html, body{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    height: 100%;*/
+/*}*/
+
+/*#navigBar*/
+/*{*/
+/*    list-style-type: none;*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*    height: 98px;*/
+/*    justify-content: space-between;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+
+/*}*/
+
+/*#logo{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*}*/
 
 .box{
 
