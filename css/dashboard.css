@@ -33,7 +33,7 @@ nav.logo
 .logo .menu-btn
 {
     font-size: 28px;
-    color: #c1ccc1;
+    color: black;
     cursor: pointer;
     margin-right: 14px;
 }
@@ -52,7 +52,7 @@ nav .sidebar
     position: fixed;
     top: 0;
     padding: 20px 0;
-    background: linear-gradient(to top, rgb(97, 133, 168) 0%, rgb(97, 133, 168) 20%, rgb(255, 192, 203) 50%, rgb(97, 133, 168) 80%, rgb(97, 133, 168) 100%);
+    background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);
     box-shadow: 0 15px 11px black;
     transition: all 0.4s ease;
     left: -100%;
@@ -95,14 +95,14 @@ nav.display .sidebar
 .sidebar-content i
 {
     font-size: 20px;
-    color: #c1ccc1;
+    color: black;
     margin-right: 14px;
 }
 
 .sidebar-content .link
 {
     font-size: 16px;
-    color: #c1ccc1;
+    color: black;
     font-weight: 400;
 }
 
@@ -114,12 +114,12 @@ nav.display .sidebar
 
 .active
 {
-    background-color: #1d1b31;
+    /*background-color: #1d1b31;*/
 }
 
 .header-logo .menu-btn, .header-logo .logo-name
 {
-    color: #2b6c96;
+    color: black;
 }
 
 .overlay
@@ -141,3 +141,149 @@ nav.display ~.overlay
     left: 260px;
     pointer-events: auto;
 }
+
+.container
+{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.heading
+{
+
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+    .card
+    {
+        margin: 20px;
+        width: 27%;
+        background: #fff;
+        border: 1px solid #ccc;
+        /*margin-bottom: 50px;*/
+        transition: 0.3s;
+    }
+
+    .card-header
+    {
+        text-align: center;
+        padding: 50px 10px;
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        color: #fff;
+    }
+    .card-body
+    {
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .card:hover
+    {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    }
+
+    /*Responsive media queries*/
+
+.card
+{
+    background: beige;
+}
+.card .flex-column
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card .flex-row
+{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding-top: 11px;
+}
+.flex-row .task-title
+{
+    font-size: 15px;
+    padding-left: 20px;
+    min-width: 85%;
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+}
+.option-buttons
+{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.description-task
+{
+    min-height: 130px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex-row-buttons
+{
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.buttons
+{
+    min-width: 75%;
+}
+.checkbox
+{
+    min-width: 20px;
+    min-height: 16px;
+    padding-top: 5px;
+}
+.text
+{
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .card
+    {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 620px)
+{
+    .container
+    {
+        width: 100%;
+    }
+    .heading
+    {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card
+    {
+        width: 80%;
+    }
+
+}
+

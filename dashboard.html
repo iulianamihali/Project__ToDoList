@@ -6,12 +6,14 @@
   <meta charset="UTF-8">
   <title>Responsive Sidebar Menu</title>
   <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
+
       <div class="logo header-logo">
         <i class='bx bx-menu menu-btn'></i>
-        <span class="logo-name">GoalTracker</span>
+        <span class="logo-name"></span>
 
       </div>
 
@@ -73,21 +75,337 @@
 
 <section class="overlay"></section>
 
-<script>
-  const navBar = document.querySelector("nav"),
-        menuBTN = document.querySelectorAll(".menu-btn"),
-          Overlay = document.querySelector(".overlay");
+<div class="container">
 
-  menuBTN.forEach((menuBTN)=>
-  {
-    menuBTN.addEventListener("click", ()=>{
-      navBar.classList.toggle("display");
-    });
-  });
-  Overlay.addEventListener("click", ()=>{
-    navBar.classList.remove("display");
-  });
 
-</script>
+  <div class="row">
+
+    <div class="card">
+      <div class="flex-column">
+          <div class="flex-row">
+            <div class="task-title">
+              <h2>The first task</h2>
+            </div>
+
+            <div class="option-buttons">
+              <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+          </div>
+          <div class="description-task">
+            <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+          </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The second task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+
+        </div>
+
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The third task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+
+        </div>
+
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The four task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+
+        </div>
+
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="task-title">
+            <h2>The first task</h2>
+          </div>
+
+          <div class="option-buttons">
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+        </div>
+        <div class="description-task">
+          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="check">
+          </div>
+          <div class="text">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+
+    <script src="js/navBarEvents.js"></script>
+
 </body>
 </html>
