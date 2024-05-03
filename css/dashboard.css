@@ -38,6 +38,7 @@ nav.logo
     color: black;
     cursor: pointer;
     margin-right: 14px;
+
 }
 .logo .logo-name
 {
@@ -46,6 +47,22 @@ nav.logo
     font-weight: bold;
     color: #c1ccc1;
 }
+.logo .header-logo
+{
+    margin-left: 25px;
+}
+.flex-row2
+{
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+}
+.color-type
+{
+    display: flex;
+    align-items: center;
+}
+
 
 nav .sidebar
 {
@@ -54,15 +71,16 @@ nav .sidebar
     position: fixed;
     top: 0;
     padding: 20px 0;
-    background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, rgb(164, 78, 51) 90%);
-    box-shadow: 0 15px 11px black;
+    background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%);
     transition: all 0.4s ease;
     left: -100%;
+
 }
 
 nav.display .sidebar
 {
     left: 0;
+
 }
 
 .sidebar-content
@@ -148,7 +166,7 @@ nav.display ~.overlay
 {
     width: 90%;
     margin: 50px auto;
-    padding-top: 50px;
+
     z-index: 0;
 }
 
@@ -262,12 +280,138 @@ nav.display ~.overlay
     display: block;
 }
 
-
+#delete-popup
+{
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: none;
+    font-size: 16px;
+}
+#delete-popup:hover
+{
+    background: #bbbbb4;
+}
 .option-buttons
 {
     padding-top: 10px;
     font-size: 40px;
 }
+#edit-popup
+{
+    width: 100px;
+    height: 40px;
+    background: white;
+    border: none;
+    font-size: 16px;
+}
+#edit-popup:hover
+{
+    background: #bbbbb4;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 1000%; /* Full height */
+    overflow-y: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#textarea1
+{
+    resize: none;
+    border-radius: 19px;
+    border: 2px solid;
+}
+textarea
+{
+    padding-top: 7px;
+    padding-left: 12px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+}
+.create
+{
+    padding-right: 25px;
+    font-size: 29px;
+}
+.create:hover
+{
+   font-size: 35px;
+    transition: 0.2s linear;
+}
+.title
+{
+    padding-left: 20px;
+}
+
+#modalHeader
+{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    background: none;
+    width: 80%;
+
+}
+.modal-content
+{
+    background: beige;
+    width: 24%;
+}
+
+.editTextSave
+{
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.editTextSave:hover
+{
+    background: #4fb04f;
+}
+.saveButton
+{
+    padding-left: 10px;
+}
+
+
 
 .description-task
 {
@@ -324,6 +468,11 @@ nav.display ~.overlay
     .card
     {
         width: 80%;
+    }
+
+    .modal-content{
+        width: 80%;
+        margin-top: 200px;
     }
 
 }
