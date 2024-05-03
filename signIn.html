@@ -3,10 +3,11 @@
 <head>
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/signIn.css">
+    <script src="js/verifySession.js"></script>
 </head>
 <body>
 <!--<ul id="navigBar">-->
@@ -18,17 +19,17 @@
 <div class="main">
     <img src="assets/img_signIn.png" class="login_img">
     <div class="box">
-        <form>
+        <form id="loginForm">
             <h2>Sign In</h2>
             <div class="inputBox" id="login_validation">
-                <input id="loginInput" type="text" required="required" onchange="onchangeLoginInput()">
+                <input id="loginInput" name="loginInput" type="text" required="required" onchange="onchangeLoginInput()">
                 <span>Email / Username</span>
 <!--                <span id="eroare"></span>-->
                 <i></i>
             </div>
 
             <div class="inputBox" id="password_validation">
-                <input id="valuePassword" type="password" required="required" onchange="onchangePassword()">
+                <input id="valuePassword" type="password" name="valuePassword" required="required" onchange="onchangePassword()">
                 <span>Password</span>
 <!--                <span id="eroareP"></span>-->
                 <i></i>
@@ -44,7 +45,8 @@
 
     </div>
 </div>
-<script src="js/validations.js">
-</script>
+<script src="js/validations.js"></script>
+<script src="js/signInFunction.js"></script>
+
 </body>
 </html>
