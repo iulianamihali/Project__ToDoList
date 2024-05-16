@@ -14,10 +14,10 @@
 <div class="main">
     <img src="assets/img_signUp.png" class="login_img">
     <div class="box">
-        <form>
+        <form id="signUpForm">
             <h2>Sign Up</h2>
             <div class="inputBox" id="username_validation">
-                <input id="valueUsername" type="text" required="required" onchange="onchangeUsername()">
+                <input id="valueUsername" name="valueUsername" type="text" required="required" onchange="onchangeUsername()">
                 <span>Username</span>
 <!--                <span id="eroareU"></span>-->
                 <i></i>
@@ -25,14 +25,14 @@
 
             <div class="inputBox" id="email_validation">
 <!--                <input type="email" required="required">-->
-                <input id="valueEmail" type="text" required="required" onchange="onchangeEmail()">
+                <input id="valueEmail" name="valueEmail" type="text" required="required" onchange="onchangeEmail()">
                 <span>Email</span>
 <!--                <span id="eroare"></span>-->
                 <i></i>
             </div>
 
             <div class="inputBox" id="password_validation">
-                <input id="valuePassword" type="password" required="required" onchange="onchangePassword()">
+                <input id="valuePassword" name="valuePassword" type="password" required="required" onchange="onchangePassword()">
                 <span>Password</span>
 <!--                <span id="eroareP"></span>-->
                 <i></i>
@@ -50,6 +50,7 @@
 </div>
 <script src="js/validations.js">
 </script>
+<script src="js/signUpFunction.js"></script>
 
 </body>
 </html>
