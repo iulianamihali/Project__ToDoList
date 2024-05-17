@@ -100,129 +100,9 @@
 <section class="overlay"></section>
 
 <div class="container">
+  <div class="row" id="task-container">
 
-
-  <div class="row">
-
-    <div class="card">
-      <div class="flex-column">
-          <div class="flex-row">
-            <div class="task-title">
-              <h2>The first task</h2>
-            </div>
-            <div class="menu-container">
-              <div class="option-buttons">
-                <i class='bx bx-dots-horizontal-rounded'></i>
-              </div>
-
-                <div class="menu-options">
-                  <button id="edit-popup" onclick="edit()">Edit</button>
-                  <button id="delete-popup">Delete</button>
-                </div>
-                </div>
-            </div>
-          <div class="description-task">
-            <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
-          </div>
-        <div class="flex-row-buttons">
-          <div class="buttons">
-            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="check">
-          </div>
-          <div class="text">
-            <p>Done</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="flex-column">
-        <div class="flex-row">
-          <div class="task-title">
-            <h2>The second task</h2>
-          </div>
-
-          <div class="menu-container">
-            <div class="option-buttons">
-              <i class='bx bx-dots-horizontal-rounded'></i>
-            </div>
-
-            <div class="menu-options">
-              <div class="menu-option">Edit</div>
-              <div class="menu-option">Delete</div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="description-task">
-          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
-        </div>
-
-        <div class="flex-row-buttons">
-          <div class="buttons">
-            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="check">
-          </div>
-          <div class="text">
-            <p>Done</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="flex-column">
-        <div class="flex-row">
-          <div class="task-title">
-            <h2>The third task</h2>
-          </div>
-
-          <div class="menu-container">
-            <div class="option-buttons">
-              <i class='bx bx-dots-horizontal-rounded'></i>
-            </div>
-
-            <div class="menu-options">
-              <div class="menu-option">Edit</div>
-              <div class="menu-option">Delete</div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="description-task">
-          <p class="desc">eat, drink, run, Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.</p>
-        </div>
-
-        <div class="flex-row-buttons">
-          <div class="buttons">
-            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
-            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="check">
-          </div>
-          <div class="text">
-            <p>Done</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
+  </div>
   <div id="myModal" class="modal">
     <div class="modal-content">
       <div class="flex-column">
@@ -256,12 +136,10 @@
 
 </div>
 
-</div>
-
-
     <script src="js/editModal.js"></script>
     <script src="js/navBarEvents.js"></script>
     <script src="js/createTask.js"></script>
-
+    <script src="js/getTasks.js"></script>
+    <script src="js/addCard.js"></script>
 </body>
 </html>
