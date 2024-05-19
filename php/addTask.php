@@ -8,7 +8,7 @@ if(mysqli_connect_errno())
 // Verificarea dacă toate datele necesare sunt prezente
 if (isset($_POST['Title']) && isset($_POST['Description']) && isset($_POST['Work']) && isset($_POST['Entertainment']) && isset($_POST['Study'])) {
     // Pregătirea și executarea interogării SQL
-    $stmt = $conn->prepare("INSERT INTO tasks (Id, UserId, Title, Description, Work, Entertainment, Study, Done) VALUES (UUID(),?,?,?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO tasks (Id, UserId, Title, Description, Work, Entertainment, Study, Done, TimeStamp) VALUES (UUID(),?,?,?, ?, ?, ?, ?, NOW())");
     $stmt->bind_param("sssiiii", $_POST['UserId'], $_POST['Title'], $_POST['Description'], $_POST['Work'], $_POST['Entertainment'], $_POST['Study'], $_POST['Done']);
 
     if ($stmt->execute()) {

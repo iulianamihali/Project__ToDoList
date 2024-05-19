@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/verifySessionDashboard.js"></script>
+</head>
+<body>
+<nav>
+
+    <div class="logo header-logo">
+        <i class='bx bx-menu menu-btn'></i>
+        <span class="logo-name"></span>
+
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">
+            <i class='bx bx-menu menu-btn'></i>
+            <span class="logo-name"></span>
+        </div>
+
+        <div class="sidebar-content">
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="active">
+                        <i class='bx bxs-home' ></i>
+                        <span class="link">My Tasks</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="completedTasks.html">
+                        <i class='bx bx-task'></i>
+                        <span class="link">Completed Tasks</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="bottom-content">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-cog' ></i>
+                        <span class="link">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-log-out'></i>
+                        <span class="link">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="colors">
+    <div class="flex-row2">
+        <div class="color-type">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <p style="margin-left: 5px">work</p>
+        </div>
+        <div class="color-type">
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <p style="margin-left: 5px">entertainment</p>
+        </div>
+        <div class="color-type">
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+            <p style="margin-left: 5px">study</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="overlay"></section>
+
+<div class="container">
+    <div class="row" id="task-container">
+
+    </div>
+
+</div>
+
+<script src="js/navBarEvents.js"></script>
+<script src="js/completedTasks.js"></script>
+</body>
+</html>

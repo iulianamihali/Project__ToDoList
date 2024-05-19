@@ -4,7 +4,7 @@ $(document).ready(function() {
         return;
     }
     $.ajax({
-        url: "../php/getTasks.php",
+        url: "../php/completedTasks.php",
         type: 'GET',
         data: {
             userId: userId
@@ -57,36 +57,15 @@ function edit(card)
 
 }
 
-function doneCheck(checkButton)
-{
-    const taskId = checkButton.getAttribute('data-task-id');
-    const data = {
-        Id:taskId
-    }
-    $.ajax({
-        url: '../php/buttonDone.php',
-        type: 'POST',
-        data: data,
-        success: function(response) {
-            console.log('Marked done!', response);
 
-            $('#myModal').hide();
-            location.reload();
-        },
-        error: function(xhr, status, error) {
-            console.error('Error marked Done', error);
-        }
-    });
 
-}
 function generateTaskCards(tasks) {
     let container = $('#task-container');
     container.empty();
-    const orderTasks = tasks.sort((a, b) => Number(a.Done) - Number(b.Done));
-    for(let i = 0; i<orderTasks?.length ; i++)
+    for(let i = 0; i<tasks?.length ; i++)
     {
         const task = tasks[i];
-        let card = `<div class="card">
+        let card = `<div class="card" style="background: linear-gradient(to bottom, #ccffcc 0%, #43e743 100%)">
                     <div class="flex-column">
                         <div class="flex-row">
                             <div class="task-title">
@@ -94,12 +73,11 @@ function generateTaskCards(tasks) {
                             </div>
                             <div class="menu-container">
                                 <div class="option-buttons">
-                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                <span class="material-symbols-outlined">
+                                     check
+                                </span>
                                 </div>
-                                <div class="menu-options">
-                                <button class="edit-popup" onclick="edit(this)" data-task-id="${task.Id}" data-title="${task.Title}" data-description="${task.Description}" data-work="${task.Work}" data-entertainment="${task.Entertainment}" data-study="${task.Study}" data-done="${task.Done}">Edit</button>
-                                    <button class="delete-popup"  data-task-id="${task.Id}">Delete</button>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="description-task">
