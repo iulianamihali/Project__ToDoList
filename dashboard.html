@@ -130,16 +130,46 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
+  <div id="myModalEdit" class="modal">
+    <div class="modal-content">
+      <div class="flex-column">
+        <div class="flex-row">
+          <div class="title">
+            <span id="closeEdit">&times;</span>
+            <input type="text" id="modalHeaderEdit">
+            </input>
+          </div>
+
+        </div>
+        <div id="textareaEdit">
+          <textarea id="textarea1Edit" name="message" rows="10" cols="30"></textarea>
+        </div>
+        <div class="flex-row-buttons">
+          <div class="buttons">
+            <input type="checkbox" id="checkBut1Edit">
+            <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F"></i>
+            <input type="checkbox" id="checkBut2Edit" style="margin-left: 5px">
+            <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2"></i>
+            <input type="checkbox" id="checkBut3Edit" style="margin-left: 5px">
+            <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF"></i>
+          </div>
+          <div class="saveButtonEdit">
+            <button class="editTextSaveEdit" id="editTaskSave" >Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-    <script src="js/editModal.js"></script>
     <script src="js/navBarEvents.js"></script>
-    <script src="js/createTask.js"></script>
-    <script src="js/getTasks.js"></script>
-    <script src="js/addCard.js"></script>
+    <script src="js/createTaskModal.js"></script>
+    <script src="js/getTasksAjax.js"></script>
+    <script src="js/addTaskAjax.js"></script>
+    <script src="js/deleteTaskAjax.js"></script>
+    <script src="js/editTaskAjax.js"></script>
 </body>
 </html>

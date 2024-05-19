@@ -1,5 +1,3 @@
-
-
 let id = localStorage.getItem("sessionId");
 if(id?.length > 0)
 {

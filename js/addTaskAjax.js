@@ -10,22 +10,21 @@ $(document).ready(function() {
             UserId: userId,
             Title: modalHeader,
             Description: message,
-            Work: checkBut1 ? 1 : 0, // Simplified ternary
+            Work: checkBut1 ? 1 : 0,
             Entertainment: checkBut2 ? 1 : 0,
             Study: checkBut3 ? 1 : 0,
             Done: 0
         };
-
         $.ajax({
-            url: "../php/addCard.php",
+            url: "../php/addTask.php",
             type: 'POST',
-            data: Data, // Send as standard form data
-            success: function(response) {
+            data: Data,
+            success: (response) => {
                 console.log('Success:', response);
                 $("#myModal").hide();
                 location.reload();
             },
-            error: function(xhr, status, error) {
+            error: (xhr, status, error) => {
                 console.error('Error saving data:', status, error);
             }
         });
