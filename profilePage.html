@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edit Profile</title>
+  <title>Profile Settings</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
   <link rel="stylesheet" type="text/css" href="css/dashboard.css">
@@ -48,7 +48,7 @@
         <li>
           <a href="profilePage.html">
             <i class='bx bxs-cog' ></i>
-            <span class="link">Settings</span>
+            <span class="link">Profile</span>
           </a>
         </li>
 
@@ -66,8 +66,8 @@
 
 <div class="image">
   <img src="assets/settings_image.png">
-
 </div>
+
 <div class="profile-container">
   <div class="profile-header">
     <h1>Profile Settings</h1>
@@ -82,10 +82,17 @@
       <input type="email" id="email" name="email" placeholder="Enter your email">
     </div>
     <div class="form-row">
-      <label for="numTasks">Number of Tasks</label>
-      <input type="text" id="numTasks" name="numTasks" placeholder="50" disabled>
+      <label for="numTasks">Total Tasks</label>
+      <input type="text" style="color: black" id="numTasks" name="numTasks" placeholder="50" disabled>
     </div>
-    <button type="submit" class="save-button">Save Changes</button>
+    <div class="form-row">
+      <label for="numTasks">Tasks In Progress</label>
+      <input type="text" style="color: black" id="numTasksP" name="numTasksP" placeholder="50" disabled>
+    </div>
+    <div class="form-row">
+      <label for="numTasks">Completed Tasks</label>
+      <input type="text" style="color: black;" id="numTasksD" name="numTasksD" placeholder="50" disabled>
+    </div>
   </form>
 </div>
 <script src="js/navBarEvents.js"></script>

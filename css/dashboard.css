@@ -71,8 +71,7 @@ nav .sidebar
     position: fixed;
     top: 0;
     padding: 20px 0;
-    background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%);
-    transition: all 0.4s ease;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);    transition: all 0.4s ease;
     left: -100%;
 
 }
