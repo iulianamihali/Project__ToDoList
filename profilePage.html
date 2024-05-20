@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/profilePage.css">
+  <script src="js/verifySessionDashboard.js"></script>
+</head>
+<body>
+
+<nav style="background: transparent;">
+
+  <div class="logo header-logo">
+    <i class='bx bx-menu menu-btn'></i>
+    <span class="logo-name"></span>
+
+  </div>
+
+  <div class="sidebar">
+    <div class="logo">
+      <i class='bx bx-menu menu-btn'></i>
+      <span class="logo-name"></span>
+    </div>
+
+    <div class="sidebar-content">
+      <ul>
+        <li>
+          <a href="dashboard.html" class="active">
+            <i class='bx bxs-home' ></i>
+            <span class="link">My Tasks</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="completedTasks.html">
+            <i class='bx bx-task'></i>
+            <span class="link">Completed Tasks</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="bottom-content">
+        <li>
+          <a href="profilePage.html">
+            <i class='bx bxs-cog' ></i>
+            <span class="link">Settings</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html" onclick="removeLocalStorage()">
+            <i class='bx bx-log-out'></i>
+            <span class="link">Logout</span>
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="image">
+  <img src="assets/settings_image.png">
+
+</div>
+<div class="profile-container">
+  <div class="profile-header">
+    <h1>Profile Settings</h1>
+  </div>
+  <form class="profile-form">
+    <div class="form-row">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" >
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
+    <div class="form-row">
+      <label for="numTasks">Number of Tasks</label>
+      <input type="text" id="numTasks" name="numTasks" placeholder="50" disabled>
+    </div>
+    <button type="submit" class="save-button">Save Changes</button>
+  </form>
+</div>
+<script src="js/navBarEvents.js"></script>
+<script src="js/removeLocalStorage.js"></script>
+<script src="js/profilePage.js"></script>
+</body>
+</html>
