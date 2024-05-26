@@ -214,7 +214,7 @@ body
 
 @media (max-width: 768px) {
     .main {
-        grid-template-columns: 1fr; /* Stack elements instead of side by side */
+        grid-template-columns: 1fr;
     }
     .login_img {
         order: -1; /* Image on top */
@@ -223,13 +223,18 @@ body
     .box {
         max-width: 100%;
     }
-    padding: 10px; /* Adjust padding if needed for better layout on mobile */
+    padding: 10px;
 }
 .box form {
-    padding: 15px; /* Ensure enough padding so form fields are easily tappable */
+    padding: 15px;
 }
 .box form .inputBox input, .box form .inputBox span {
-    font-size: 16px; /* Maintain at least 16px to prevent zooming */
+    font-size: 16px;
 
 
+}
+
+#button:hover
+{
+    background-color: rgb(97, 133, 168);
 }

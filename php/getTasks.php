@@ -7,9 +7,13 @@ if(mysqli_connect_errno())
     exit('Error: Could not connect to database.' .mysqli_connect_error());
 }
 
-$result = $conn->query("SELECT * FROM tasks WHERE UserId = " . intval($userId) . " ORDER BY TimeStamp DESC");
+$stmt = $conn->prepare("SELECT * FROM tasks WHERE UserId = ? ORDER BY TimeStamp DESC");
+$stmt->bind_param("s", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+
 $tasks = [];
-while($row = $result->fetch_assoc()) {
+while ($row = $result->fetch_assoc()) {
     $tasks[] = $row;
 }
 

@@ -23,9 +23,8 @@ $(document).ready(function() {
             data: data,
             success: function(response) {
                 console.log('Task saved successfully!', response);
-                // You might want to close the modal here or refresh the page
-                $('#myModal').hide(); // Hiding the modal
-                location.reload(); // Optionally reload the page to show updated data
+                $('#myModal').hide();
+                location.reload();
             },
             error: function(xhr, status, error) {
                 console.error('Error saving task:', error);
@@ -33,8 +32,7 @@ $(document).ready(function() {
         });
     });
 
-    // Function to close modal on close button click
     $('#close').click(function() {
-        $('#myModal').hide(); // Hides the modal
+        $('#myModal').hide();
     });
 });

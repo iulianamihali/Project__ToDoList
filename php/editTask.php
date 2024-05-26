@@ -11,7 +11,6 @@ if (isset($_POST['Id']) && isset($_POST['Title']) && isset($_POST['Description']
     $stmt->bind_param('ssiiis', $_POST['Title'], $_POST['Description'], $_POST['Work'], $_POST['Entertainment'], $_POST['Study'], $_POST['Id']);
 
 
-    // Execute the statement
     if ($stmt->execute()) {
         echo "Task updated successfully.";
     } else {

@@ -23,7 +23,7 @@ $(document).ready(function()
                     }
                 },
                  error: function(jqXHR, textStatus, errorThrown) {
-                    console.log("AJAX Error:", textStatus, errorThrown); // Detailed error logging
+                    console.log("AJAX Error:", textStatus, errorThrown);
                 }
             });
 

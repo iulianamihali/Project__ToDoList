@@ -86,6 +86,7 @@ function generateTaskCards(tasks) {
     for(let i = 0; i<orderTasks?.length ; i++)
     {
         const task = tasks[i];
+        console.log(task);
         let card = `<div class="card">
                     <div class="flex-column">
                         <div class="flex-row">
@@ -107,12 +108,12 @@ function generateTaskCards(tasks) {
                         </div>
                         <div class="flex-row-buttons">
                             <div class="buttons">
-                                <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F; ${task.Work !== '1' ? 'display: none;' : ''}"></i>
-                                <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2; ${task.Entertainment !== '1' ? 'display: none;' : ''}"></i>
-                                <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF; ${task.Study !== '1' ? 'display: none;' : ''}"></i>
+                                <i class="fa fa-circle" style="font-size: 25px; color: #EF9F9F; ${task.Work !== 1 ? 'display: none;' : null}"></i>
+                                <i class="fa fa-circle" style="font-size: 25px; color: #FBF0B2; ${task.Entertainment !== 1 ? 'display: none;' : null}"></i>
+                                <i class="fa fa-circle" style="font-size: 25px; color: #CAEDFF; ${task.Study !== 1 ? 'display: none;' : null}"></i>
                             </div>
                             <div class="checkbox">
-                            <input type="checkbox" id="check" onclick="doneCheck(this)" data-task-id="${task.Id}"  ${task.Done !== '0' ? 'checked' : ''} ${task.Done !== '0' ? 'disabled' : ''}>
+                            <input type="checkbox" id="check" onclick="doneCheck(this)" data-task-id="${task.Id}"  ${task.Done !== 0 ? 'checked' : null} ${task.Done !== 0 ? 'disabled' : null}>
                             </div>
                             <div class="text">
                                 <p>Done</p>
